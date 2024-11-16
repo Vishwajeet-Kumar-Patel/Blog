@@ -6,9 +6,9 @@
 
 <h2>Project Screenshots:</h2>
 
-![Image](https://github.com/Vishwajeet-Kumar-Patel/Blog/blob/main/Screenshot2024-11-16014148.png?raw=true)
-![Dashboard](https://drive.google.com/uc?id=1NRMSlmvqK6OcYcGwn5bfgsdxC7d1_ErR)
-![Post Detail](https://drive.google.com/uc?id=1AxZFmvKmnPT2ZzFDs5YesPahqHFOfyrl)
+![Image](https://github.com/Vishwajeet-Kumar-Patel/Blog/blob/master/Screenshot%202024-11-16%20014148.png?raw=true)
+![Image](https://github.com/Vishwajeet-Kumar-Patel/Blog/blob/master/Screenshot%202024-11-16%20014201.png?raw=true)
+![Image](https://github.com/Vishwajeet-Kumar-Patel/Blog/blob/master/Screenshot%202024-11-16%20014223.png?raw=true)
 
   
 <h2>🧐 Features</h2>
