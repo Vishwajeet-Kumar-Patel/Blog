@@ -1,0 +1,112 @@
+/* General Styling for the About Page */
+.about-container {
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Section Headers */
+  h1, h2 {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Styling */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #777;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  ol {
+    padding-left: 20px;
+  }
+  
+  ol li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  .btn-lg {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .btn-primary {
+    background-color: #00aaff;
+    border-color: #00aaff;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007acc;
+    border-color: #007acc;
+    transition: background-color 0.3s;
+  }
+  
+  /* Spacing for sections */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin-top: 30px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-container {
+      padding-top: 30px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+  
+    .btn-lg {
+      font-size: 1rem;
+    }
+  }
+  

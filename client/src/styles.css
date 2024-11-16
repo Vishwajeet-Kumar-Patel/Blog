@@ -1,0 +1,336 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: auto;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  background-color: #343a40;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #343a40;
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ffc107;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #343a40;
+}
+
+/* About page styles */
+.about-container {
+  padding: 0;
+}
+
+.about-container h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h1{
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Home page styles */
+.home-container {
+  margin-top: 3rem;
+}
+
+.carousel {
+  margin-bottom: 3rem;
+}
+
+.featured-blogs {
+  margin-top: 3rem;
+}
+
+.featured-blogs .card {
+  margin-bottom: 2rem;
+}
+
+.featured-blogs .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.featured-blogs .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.featured-blogs .btn {
+  margin-top: 1rem;
+}
+
+/* Rich text editor styles */
+.ql-container {
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.ql-editor {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Create and Edit Post page styles */
+.create-post-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.create-post-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.create-post-form .form-control,
+.create-post-form .form-control-file {
+  border-radius: 5px;
+}
+
+.create-post-form .btn {
+  border-radius: 5px;
+}
+
+/* Post List Page */
+.post-list-container {
+  margin-top: 25px;
+  padding: 2rem 0;
+}
+
+.post-list-container h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.post-list-container .card {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-list-container .post-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-list-container .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-list-container .card-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.post-list-container .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  flex: 1;
+}
+
+.post-list-container .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  align-self: flex-end;
+}
+
+.post-list-container .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.post-list-container .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.post-list-container .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Pagination */
+.pagination-container {
+  margin-top: 2rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination .page-link {
+  color: #007bff;
+}
+
+.pagination .page-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+}
+
+/* Login and Signup Page Styles */
+.login-card, .signup-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-top: 25px;
+}
+
+.login-form .form-group, .signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form .btn, .signup-form .btn {
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn-lg {
+    padding: 8px 16px;
+  }
+
+  .create-post-form {
+    padding: 1rem;
+  }
+
+  .create-post-form .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .create-post-form .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .post-list-container .card {
+    margin-bottom: 1rem;
+  }
+
+  .post-list-container .post-card-img {
+    height: 150px;
+  }
+
+  .post-list-container .card-title {
+    font-size: 1.25rem;
+  }
+
+  .post-list-container .card-text {
+    font-size: 0.875rem;
+  }
+}

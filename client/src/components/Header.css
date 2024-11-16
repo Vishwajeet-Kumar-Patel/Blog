@@ -1,0 +1,30 @@
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  .btn-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    color: #ccc;
+    text-decoration: none;
+  }

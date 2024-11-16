@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .home-container {
+    padding-top: 80px; /* Give space for fixed navbar */
+  }
+  
+  /* Carousel Styles */
+  .carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #00aaff;
+  }
+  
+  /* Button Styles */
+  .btn-lg {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .btn-primary {
+    background-color: #00aaff;
+    border-color: #00aaff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+  }
+  
+  /* Featured Blogs Section */
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .card-body .btn {
+    margin-top: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 40px;
+  }
+  
+  footer h5 {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  footer a:hover {
+    color: #00aaff;
+  }
+  
+  footer .container {
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+  
+  footer .text-center {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer .list-unstyled {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  footer .row .col-md-12,
+  footer .row .col-lg-3 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 250px;
+    }
+  
+    .home-container {
+      padding-top: 60px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.85rem;
+    }
+  
+    .btn-lg {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  
