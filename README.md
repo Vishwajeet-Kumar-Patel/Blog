@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Vishwajeet's BLOG</h1>
 
-<p align="center"><img src="https://socialify.git.ci/Vishwajeet-Kumar-Patel/Blog/image?font=Raleway&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/Vishwajeet-Kumar-Patel/Blog/image?description=1&descriptionEditable=Vishwajeet%27s%20Blog%20is%20a%20platform%20that%20allows%20users%20to%20share%20their%20thoughts%20and%20ideas%20with%20the%20world.&font=Raleway&issues=1&language=1&name=1&owner=1&pattern=Charlie%20Brown&stargazers=1&theme=Dark" alt="project-image"></p>
 
 <p id="description">Vishwajeet's Blog is a platform that allows users to share their thoughts and ideas with the world. Users can create edit and delete posts as well as update their personal profiles. The platform features a carousel of featured posts on the homepage a dashboard for authors to manage their posts and a responsive design to ensure an optimal user experience across all devices.</p>
 
