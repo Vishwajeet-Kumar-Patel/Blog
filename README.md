@@ -6,13 +6,10 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://drive.google.com/file/d/1eJRhyhVHK6CV3d572kNANlCKOyDahcYV/view?usp=drive_link" alt="project-screenshot" width="10cm" height="7cm/">
+![Homepage]([https://drive.google.com/uc?id=1eJRhyhVHK6CV3d572kNANlCKOyDahcYV])
+![Dashboard](https://drive.google.com/uc?id=1NRMSlmvqK6OcYcGwn5bfgsdxC7d1_ErR)
+![Post Detail](https://drive.google.com/uc?id=1AxZFmvKmnPT2ZzFDs5YesPahqHFOfyrl)
 
-<img src="https://drive.google.com/file/d/1NRMSlmvqK6OcYcGwn5bfgsdxC7d1_ErR/view?usp=drive_link" alt="project-screenshot" width="100px" height="60px/">
-
-<img src="https://drive.google.com/file/d/1AxZFmvKmnPT2ZzFDs5YesPahqHFOfyrl/view?usp=drive_link" alt="project-screenshot" width="100px" height="60px/">
-
-  
   
 <h2>🧐 Features</h2>
 
