@@ -6,7 +6,7 @@
 
 <h2>Project Screenshots:</h2>
 
-![Homepage]([https://drive.google.com/uc?id=1eJRhyhVHK6CV3d572kNANlCKOyDahcYV])
+![Image](https://github.com/Vishwajeet-Kumar-Patel/Blog/blob/main/Screenshot2024-11-16014148.png?raw=true)
 ![Dashboard](https://drive.google.com/uc?id=1NRMSlmvqK6OcYcGwn5bfgsdxC7d1_ErR)
 ![Post Detail](https://drive.google.com/uc?id=1AxZFmvKmnPT2ZzFDs5YesPahqHFOfyrl)
 
