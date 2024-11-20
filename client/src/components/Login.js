@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/users/login', { username, password });
+      const response = await axios.post('https://vishwajeets-blog.onrender.com/users/login', { username, password });
       localStorage.setItem('token', response.data.token);
       navigate('/');
     } catch (error) {
