@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/users/signup', { username, email, password });
+      await axios.post('https://vishwajeets-blog.onrender.com/users/signup', { username, email, password });
       navigate('/login');
     } catch (error) {
       console.error(error);
