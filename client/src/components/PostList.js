@@ -25,7 +25,7 @@ const PostList = () => {
 
   const fetchUserProfile = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5000/users/profile', {
+      const response = await axios.get('https://vishwajeets-blog.onrender.com/users/profile', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(response.data);
@@ -38,7 +38,7 @@ const PostList = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get('http://localhost:5000/posts', {
+      const response = await axios.get('https://vishwajeets-blog.onrender.com/posts', {
         params: { page, limit: 10 },
       });
       setPosts(response.data.posts);
@@ -54,7 +54,7 @@ const PostList = () => {
   const handleDelete = async (postId) => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`http://localhost:5000/posts/${postId}`, {
+      await axios.delete(`https://vishwajeets-blog.onrender.com/posts/${postId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPosts(posts.filter((post) => post._id !== postId));
@@ -68,7 +68,7 @@ const PostList = () => {
     const token = localStorage.getItem('token');
     try {
       const response = await axios.post(
-        `http://localhost:5000/posts/${postId}/like`,
+        `https://vishwajeets-blog.onrender.com/posts/${postId}/like`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -83,7 +83,7 @@ const PostList = () => {
     const token = localStorage.getItem('token');
     try {
       const response = await axios.post(
-        `http://localhost:5000/posts/${postId}/comment`,
+        `https://vishwajeets-blog.onrender.com/posts/${postId}/comment`,
         { content: commentContent[postId] },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -106,7 +106,7 @@ const PostList = () => {
   const renderPostCard = (post) => (
     <div className="post-card" key={post._id}>
       <div className="card">
-        {post.image && <img src={`http://localhost:5000/${post.image}`} className="card-img-top post-image" alt={post.title} />}
+        {post.image && <img src={`https://vishwajeets-blog.onrender.com/${post.image}`} className="card-img-top post-image" alt={post.title} />}
         <div className="card-body">
           <h5 className="post-title">{post.title}</h5>
           <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content.substring(0, 100) }} />
