@@ -12,7 +12,7 @@ const Home = () => {
     const fetchFeaturedPosts = async () => {
       try {
         // Fetch the first 3 posts from the server to display as featured
-        const response = await axios.get('http://localhost:5000/posts');
+        const response = await axios.get('https://vishwajeets-blog.onrender.com/posts');
         console.log('Fetched posts:', response.data); // Log the fetched posts
         if (Array.isArray(response.data.posts)) {
           // Assume the first 3 posts are featured
@@ -57,7 +57,7 @@ const Home = () => {
       <div key={post._id} className={`carousel-item ${activeIndex === index ? 'active' : ''}`}>
         {post.image && (
           <img
-            src={`http://localhost:5000/${post.image}`} // Assuming your API returns the correct path for the image
+            src={`https://vishwajeets-blog.onrender.com/${post.image}`} // Assuming your API returns the correct path for the image
             className="d-block w-100"
             alt={post.title}
           />
@@ -75,7 +75,7 @@ const Home = () => {
         <div className="card mb-4 shadow-sm">
           {post.image && (
             <img
-              src={`http://localhost:5000/${post.image}`} // Same image path as the carousel
+              src={`https://vishwajeets-blog.onrender.com/${post.image}`} // Same image path as the carousel
               className="card-img-top"
               alt={post.title}
             />
