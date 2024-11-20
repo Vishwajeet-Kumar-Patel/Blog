@@ -14,9 +14,9 @@ const Home = () => {
         // Fetch the first 3 posts from the server to display as featured
         const response = await axios.get('http://localhost:5000/posts');
         console.log('Fetched posts:', response.data); // Log the fetched posts
-        if (Array.isArray(response.data)) {
+        if (Array.isArray(response.data.posts)) {
           // Assume the first 3 posts are featured
-          setFeaturedPosts(response.data.slice(0, 3));
+          setFeaturedPosts(response.data.posts.slice(0, 3));
         } else {
           console.error('Fetched data is not an array:', response.data);
           throw new Error('Fetched data is not an array');
@@ -40,7 +40,7 @@ const Home = () => {
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, [featuredPosts]);
 
-  // Render carousel indicators
+  /* Render carousel indicators
   const renderCarouselIndicators = () =>
     featuredPosts.map((_, index) => (
       <li
@@ -49,7 +49,7 @@ const Home = () => {
         data-bs-slide-to={index}
         className={activeIndex === index ? 'active' : ''}
       ></li>
-    ));
+    )); */
 
   // Render carousel items (images and content)
   const renderCarouselItems = () =>
@@ -64,7 +64,6 @@ const Home = () => {
         )}
         <div className="carousel-caption d-none d-md-block">
           <h5>{post.title}</h5>
-          <p>{post.content.substring(0, 100)}...</p> {/* Display post excerpt */}
         </div>
       </div>
     ));
@@ -83,9 +82,11 @@ const Home = () => {
           )}
           <div className="card-body">
             <h5 className="card-title">{post.title}</h5>
+            <p className="card-text"><strong>Author:</strong> {post.author.username}</p>
+            <p className="card-text"><strong>Date:</strong> {new Date(post.createdAt).toLocaleDateString()}</p>
             <div
               className="card-text"
-              dangerouslySetInnerHTML={{ __html: post.content.substring(0, 100) }}
+              dangerouslySetInnerHTML={{ __html: post.content.substring(0, 200) + '...' }}
             />
             <Link to={`/posts/${post._id}`} className="btn btn-primary">
               Read More
@@ -96,10 +97,9 @@ const Home = () => {
     ));
 
   return (
-    <div className="container home-container">
+    <div className="container mt-5 home-container">
       {/* Carousel Section */}
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-        <ol className="carousel-indicators">{renderCarouselIndicators()}</ol>
         <div className="carousel-inner">{renderCarouselItems()}</div>
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -113,7 +113,7 @@ const Home = () => {
 
       {/* Buttons Section */}
       <div className="d-flex justify-content-center mt-4">
-        <Link className="btn btn-primary btn-lg me-2" to="/posts">
+        <Link className="btn btn-info btn-lg me-2" to="/posts">
           View Posts
         </Link>
         <Link className="btn btn-secondary btn-lg me-2" to="/create">

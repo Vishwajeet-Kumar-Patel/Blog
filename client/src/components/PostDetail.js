@@ -8,6 +8,7 @@ const PostDetail = () => {
   const { id } = useParams(); // Extract post ID from URL
   const [post, setPost] = useState(null); // Post data
   const [user, setUser] = useState(null); // Current logged-in user
+  const [comment, setComment] = useState(''); // New comment content
   const navigate = useNavigate(); // Navigation handler
 
   useEffect(() => {
@@ -51,6 +52,29 @@ const PostDetail = () => {
     } catch (error) {
       console.error('Error deleting post:', error);
       alert('Failed to delete post');
+    }
+  };
+
+  const handleCommentSubmit = async (e) => {
+    e.preventDefault();
+    const token = localStorage.getItem('token');
+    try {
+      const response = await axios.post(
+        `http://localhost:5000/posts/${id}/comments`,
+        { content: comment },
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+      console.log('Comment added:', response.data); // Log the added comment
+      setPost((prevPost) => ({
+        ...prevPost,
+        comments: [...prevPost.comments, response.data],
+      }));
+      setComment('');
+    } catch (error) {
+      console.error('Error adding comment:', error);
+      alert('Failed to add comment');
     }
   };
 
@@ -140,6 +164,28 @@ const PostDetail = () => {
           ))
         ) : (
           <p>No comments yet. Be the first to comment!</p>
+        )}
+
+        {/* Add Comment Form */}
+        {user && (
+          <form onSubmit={handleCommentSubmit} className="mt-4">
+            <div className="mb-3">
+              <label htmlFor="comment" className="form-label">
+                Add a Comment
+              </label>
+              <textarea
+                id="comment"
+                className="form-control"
+                rows="3"
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+                required
+              ></textarea>
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit Comment
+            </button>
+          </form>
         )}
       </div>
     </div>

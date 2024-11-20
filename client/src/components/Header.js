@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is included
-import './Header.css'; // Your custom CSS if needed
+import './Header.css'; // Custom CSS for transparent header
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,9 +13,9 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <nav className="navbar navbar-expand-lg transparent-navbar fixed-top shadow-sm">
       <div className="container">
-        <Link className="navbar-brand text-primary" to="/">
+        <Link className="navbar-brand text-white" to="/">
           <strong>Vishwajeet's Blog</strong>
         </Link>
         <button
@@ -32,45 +32,45 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link text-white" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link text-white" to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/posts">
+              <Link className="nav-link text-white" to="/posts">
                 Posts
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/create">
+              <Link className="nav-link text-white" to="/create">
                 Create Post
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard">
+              <Link className="nav-link text-white" to="/dashboard">
                 Dashboard
               </Link>
             </li>
             {token ? (
               <li className="nav-item">
-                <button className="btn btn-link nav-link" onClick={handleLogout}>
+                <button className="btn btn-link nav-link text-white" onClick={handleLogout}>
                   Logout
                 </button>
               </li>
             ) : (
               <>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">
+                  <Link className="nav-link text-white" to="/login">
                     Login
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/signup">
+                  <Link className="nav-link text-white" to="/signup">
                     Signup
                   </Link>
                 </li>
