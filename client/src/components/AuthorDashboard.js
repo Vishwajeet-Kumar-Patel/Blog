@@ -6,7 +6,6 @@ import './AuthorDashboard.css';
 
 const AuthorDashboard = () => {
   const [posts, setPosts] = useState([]);
-  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [name, setName] = useState('');
