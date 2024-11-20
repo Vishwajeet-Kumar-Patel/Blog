@@ -16,7 +16,7 @@ const EditPost = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${id}`)
+    axios.get(`https://vishwajeets-blog.onrender.com/posts/${id}`)
       .then(response => {
         setTitle(response.data.title);
         setContent(response.data.content);
@@ -40,7 +40,7 @@ const EditPost = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5000/posts/${id}`, formData, {
+      await axios.put(`https://vishwajeets-blog.onrender.com/posts/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`
