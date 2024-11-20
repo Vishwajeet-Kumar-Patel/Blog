@@ -17,7 +17,7 @@ const PostDetail = () => {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const response = await axios.get('http://localhost:5000/users/profile', {
+          const response = await axios.get('https://vishwajeets-blog.onrender.com/users/profile', {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser(response.data);
@@ -30,7 +30,7 @@ const PostDetail = () => {
     // Fetch the post details
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/posts/${id}`);
+        const response = await axios.get(`https://vishwajeets-blog.onrender.com/posts/${id}`);
         setPost(response.data);
       } catch (error) {
         console.error('Error fetching post:', error);
@@ -44,7 +44,7 @@ const PostDetail = () => {
   const handleDelete = async () => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`http://localhost:5000/posts/${id}`, {
+      await axios.delete(`https://vishwajeets-blog.onrender.com/posts/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Post deleted successfully');
@@ -60,7 +60,7 @@ const PostDetail = () => {
     const token = localStorage.getItem('token');
     try {
       const response = await axios.post(
-        `http://localhost:5000/posts/${id}/comments`,
+        `https://vishwajeets-blog.onrender.com/posts/${id}/comments`,
         { content: comment },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -112,7 +112,7 @@ const PostDetail = () => {
       {/* Image */}
       {post.image && (
         <img
-          src={`http://localhost:5000/${post.image}`}
+          src={`https://vishwajeets-blog.onrender.com/${post.image}`}
           className="img-fluid rounded mb-4"
           alt={post.title}
         />
@@ -121,7 +121,7 @@ const PostDetail = () => {
       {/* Author Info */}
       <div className="d-flex align-items-center mb-4">
         <img
-          src={`http://localhost:5000/${post.author.avatar}`}
+          src={`https://vishwajeets-blog.onrender.com/${post.author.avatar}`}
           alt="Author Avatar"
           className="rounded-circle me-2"
           width="50"
@@ -151,7 +151,7 @@ const PostDetail = () => {
             <div key={comment._id} className="border p-3 rounded mb-3">
               <div className="d-flex align-items-center mb-2">
                 <img
-                  src={`http://localhost:5000/${comment.user.avatar}`}
+                  src={`https://vishwajeets-blog.onrender.com/${comment.user.avatar}`}
                   alt="Commenter Avatar"
                   className="rounded-circle me-2"
                   width="30"
