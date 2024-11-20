@@ -9,7 +9,6 @@ const AuthorDashboard = () => {
   // eslint-disable-next-line
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
