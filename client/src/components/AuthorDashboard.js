@@ -17,7 +17,7 @@ const AuthorDashboard = () => {
     const token = localStorage.getItem('token');
     if (token) {
       axios
-        .get('http://localhost:5000/users/profile', {
+        .get('https://vishwajeets-blog.onrender.com/users/profile', {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {
@@ -34,7 +34,7 @@ const AuthorDashboard = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get(`http://localhost:5000/users/posts`, {
+      const response = await axios.get(`https://vishwajeets-blog.onrender.com/users/posts`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       setPosts(response.data);
@@ -55,7 +55,7 @@ const AuthorDashboard = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.put('http://localhost:5000/users/profile', formData, {
+      await axios.put('https://vishwajeets-blog.onrender.com/users/profile', formData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Profile updated successfully');
@@ -68,7 +68,7 @@ const AuthorDashboard = () => {
   const handleDelete = async (postId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/posts/${postId}`, {
+      await axios.delete(`https://vishwajeets-blog.onrender.com/posts/${postId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPosts(posts.filter((post) => post._id !== postId));
@@ -148,7 +148,7 @@ const AuthorDashboard = () => {
                   <div className="card post-card">
                     {post.image && (
                       <img
-                        src={`http://localhost:5000/${post.image}`}
+                        src={`https://vishwajeets-blog.onrender.com/${post.image}`}
                         className="post-card-img"
                         alt={post.title}
                       />
